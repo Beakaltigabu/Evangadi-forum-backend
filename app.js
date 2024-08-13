@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require('cors');
 const app = express();
-//const port = 5500;
+const port = 5500;
 
 require('dotenv').config();
 
@@ -25,7 +25,7 @@ app.use('/api/answers', answerRoute);
 
 
 
-/* async function start() {
+async function start() {
   try {
     await dbConnection.execute("SELECT 1");
     await createTables();
@@ -39,4 +39,3 @@ app.use('/api/answers', answerRoute);
 }
 
 start();
- */
